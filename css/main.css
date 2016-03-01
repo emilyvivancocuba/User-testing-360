@@ -16,41 +16,42 @@ h3 {
 .w-100{
   width: 100%;
 }
+.pd-0{
+  padding: 0px;
+}
 nav{
   border: none;
   background-color: transparent;
   position: fixed;
 }
 .navbar-nav {
-    margin: 30px;
+  margin: 30px;
+  font-size: 20px;
+  font-weight: 500;
 }
-.navbar-brand {
-  float: left;
-  height: 25px;
-  width: 200px;
-  padding: 0px;
-  line-height: 0px;
-  display: inline-block;
-  clear: both;
+.nav>li>a {
+  padding: 10px 25px;
+}
+.navbar-toggle {
+  margin-top: 24px;
+}
+.navbar-inverse {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #FFF;
 }
 .user-r{
-  width: 100%;
-}
-.nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.nav > li {
-  position: relative;
-  display: block;
+  width: 200px;
+  margin: 30px;
 }
 .nav > li > a {
   color: white;
-}
-.nav > li > a:hover,
-.nav > li > a:focus {
-  background-color: yellow;
 }
 .banner{
   height: 100vh;
@@ -58,14 +59,13 @@ nav{
   position: relative;
   background-image: url(../image/large.jpg);
   background-size: cover;
+  background-color: rgba(11, 12, 12, 0.57);
+  background-blend-mode: color;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-}
-.capa-opaca{
-  background-color: rgba(0,0,0,0.8);
-  position: relative;
+  padding: 0px;
 }
 .txt-banner{
   color: white;
@@ -74,4 +74,31 @@ nav{
   text-align: center;
   font-size: 12px;
   position: relative;
+}
+.txt-banner h1{
+  font-size: 45px;
+  padding: 0px 21%;
+  font-weight: 500;
+}
+.prueba{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(78, 126, 184, 0.85);
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.w-60{
+  width: 60%;
+  margin: 0px auto;
+}
+.prueba h2{
+  font-size: 30px;
+}
+.inline-block{
+  display: inline-block;
 }
