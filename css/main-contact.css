@@ -1,0 +1,95 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+a{
+  text-decoration: none !important;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-style: normal;
+}
+p{
+  margin: 0px;
+}
+.w-100{
+  width: 100%;
+}
+.pd-0{
+  padding: 0px;
+}
+a:hover,
+a:focus{
+  color: white;
+  background-color: none;
+}
+.banner{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0px;
+  z-index: -1;
+  height: 100vh;
+  display: table;
+  background-image: url(../image/large.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+.formulario-testing{
+  margin: 0px auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+.title{
+  padding-left: 8.33333333%;
+}
+.cuadro{
+  width: 60%;
+  margin: 0px auto;
+  background-color: white;
+  border-top: 5px solid #6B97D0;
+}
+.cuadro .input,
+.cuadro textarea{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cuadro textarea{
+  padding-top: 50px;
+}
+.red{
+  color: red;
+}
+.boton_enviar{
+  padding: 5px 10px;
+  border: none;
+  background-color: #74A3DB;
+  border-radius: 7px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.foot{
+  padding:14px;
+}
+.foot a{
+  text-decoration: underline;
+}
+.f-right{
+  float: right;
+}

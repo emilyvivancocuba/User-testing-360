@@ -1,5 +1,5 @@
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 a{
   text-decoration: none !important;
@@ -7,22 +7,39 @@ a{
 .h1,
 .h2,
 .h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
-h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
- }
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-style: normal;
+}
+p{
+  margin: 0px;
+}
 .w-100{
   width: 100%;
 }
 .pd-0{
   padding: 0px;
 }
+a:hover,
+a:focus{
+  color: white;
+  background-color: none;
+}
 nav{
   border: none;
   background-color: transparent;
   position: fixed;
+  z-index: 1030;
 }
 .navbar-nav {
   margin: 30px;
@@ -40,11 +57,11 @@ nav{
   border: none;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: #FFF;
+  color: #FFF;
 }
 .nav>li>a:hover,
 .nav>li>a:focus {
-    background-color: #FFF;
+  background-color: #FFF;
 }
 .user-r{
   width: 200px;
@@ -53,19 +70,28 @@ nav{
 .nav > li > a {
   color: white;
 }
+.banner,
+.sec-2{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.51);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 0px;
+  background-blend-mode: color-burn;
+  z-index: -1;
+}
 .banner{
   height: 100vh;
   display: table;
-  position: relative;
   background-image: url(../image/large.jpg);
-  background-size: cover;
-  background-color: rgba(11, 12, 12, 0.57);
-  background-blend-mode: color;
-  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
-  padding: 0px;
+}
+.sec-2{
+  background-image: url(../image/sec-2.jpg);
+  background-position: left;
+  height: 600px;
 }
 .txt-banner{
   color: white;
@@ -81,24 +107,187 @@ nav{
   font-weight: 500;
 }
 .prueba{
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(78, 126, 184, 0.85);
   color: white;
-  text-align: justify;
-  text-justify: inter-word;
   padding-top: 28px;
   padding-bottom: 28px;
+  text-align: center;
 }
-.w-60{
-  width: 60%;
-  margin: 0px auto;
+.prueba-header{
+  background-color: rgba(116, 163, 219, 0.85);
+  position: absolute;
+}
+.prueba-footer{
+  background-color: #74A3DB;
+  position: relative;
 }
 .prueba h2{
   font-size: 30px;
 }
+.prueba p{
+  font-size: 16px;
+  padding-top: 14px;
+}
 .inline-block{
   display: inline-block;
+}
+.try-it{
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 26px;
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 0px 28px;
+}
+.plr-10{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.plr-5{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.plr-4-10{
+  padding-left: 4%;
+  padding-right: 10%;
+}
+.txt-celeste,
+.iconos{
+  color: #68ADFF;
+}
+.servicios,
+.txt-ejm{
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.b-redondo{
+  display: inline-block;
+  border-radius: 100%;
+  padding: 50px;
+  box-shadow: -3px 5px 7px gray;
+}
+.iconos{
+  font-size: 42px;
+  background-color: white;
+}
+.services{
+  padding-bottom: 100px;
+}
+.services h4{
+  color: #6F8CA7;
+  line-height: 1.8;
+  padding:20px 0px;
+  font-size: 28px;
+}
+.description1,
+.description2,
+.manzana{
+  font-size: 16px;
+  line-height: 1.5;
+  font-size: 500;
+}
+.description1{
+  padding-bottom: 50px;
+}
+.hr-separador{
+  margin-bottom: -53px;
+  margin-top: 0px;
+}
+.hr-estrecho{
+  margin-bottom: 0px;
+}
+.logo-2{
+  width: 250px;
+}
+.txt-ejm{
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.description2{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.flecha{
+  display: block;
+  margin: 0px auto;
+}
+.ejemplo{
+  padding-bottom: 50px;
+  position: relative;
+}
+.video-ejemplo{
+  width: 100%;
+  height: 360px;
+  padding-top: 50px;
+}
+.procedimiento h2{
+  padding: 20px 0px 10px;
+}
+.procedimiento h4{
+  padding: 10px 0px;
+  font-size: 20px;
+}
+.procedimiento p,
+.procedimiento ul li{
+  font-size: 17px;
+}
+.txt-proc{
+  padding-bottom: 30px;
+}
+.lista-paso-2 li{
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-size: 16px;
+}
+.c-pointer{
+  cursor: pointer;
+}
+.icon-proc{
+  font-size: 28px;
+  padding: 14px;
+  border-radius: 100%;
+  background-color: #50BDEA;
+  color: white;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+}
+.icon-mg{
+  left: -4%;
+  position: absolute;
+}
+.motivos{
+  padding-top: 80px;
+}
+.pb-150{
+  padding-bottom: 150px;
+}
+.mg-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.footer{
+  background-color: #2A3541;
+  color: white;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 16px;
+}
+.footer p{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.footer i{
+  border-radius: 100%;
+  padding: 14px;
+  font-size: 35px;
+}
+.copy{
+  font-size: 18px;
 }
